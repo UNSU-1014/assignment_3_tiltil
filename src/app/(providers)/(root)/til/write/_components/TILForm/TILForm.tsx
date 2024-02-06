@@ -19,10 +19,8 @@ function TILForm() {
     const response = await fetch(url, options);
     const data = await response.json();
     if (response.ok) {
-      // Step 3: Redirect to homepage upon successful submission
       router.push("/");
     } else {
-      // Handle errors or unsuccessful submissions here
       console.error("Submission failed", data);
     }
   };

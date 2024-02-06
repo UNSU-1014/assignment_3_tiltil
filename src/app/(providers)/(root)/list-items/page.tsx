@@ -7,15 +7,11 @@ export async function getServerSideProps() {
   const data = await res.json();
 
   return {
-    props: { data }, // will be passed to the page component as props
+    props: { data },
   };
 }
 function ListItems({ data }) {
-  return (
-    <div className="flex flex-wrap justify-center">
-      {/* <ListItemGallery key={item} /> */}
-    </div>
-  );
+  return <div className="flex flex-wrap justify-center"></div>;
 }
 
 export default ListItems;

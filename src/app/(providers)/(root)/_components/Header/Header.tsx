@@ -4,7 +4,6 @@ import HeaderAuthButtons from "./_components/HeaderAuthButtons";
 function Header() {
   return (
     <header className="h-20 border-b flex items-center justify-between px-4 sm:px-6 lg:px-8">
-      {/* Logo with Tailwind CSS for styling */}
       <div className="flex-shrink-0">
         <Link href="/">
           <p className="text-xl font-bold text-gray-900 hover:text-gray-700">
@@ -13,7 +12,6 @@ function Header() {
         </Link>
       </div>
 
-      {/* Navigation */}
       <nav>
         <ul className="flex space-x-4">
           <li className="text-gray-600 hover:text-gray-900">
@@ -26,7 +24,6 @@ function Header() {
         </ul>
       </nav>
 
-      {/* Authentication Buttons */}
       <div>
         <HeaderAuthButtons />
       </div>
